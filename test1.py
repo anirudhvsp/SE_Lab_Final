@@ -10,7 +10,7 @@ def student():
 def result():
     if request.method == 'POST':
         result = request.form
-        api_key = "1b1ee5bc9d6bdb7769f87e25a8c7b380"
+        api_key = "API KEY HERE"
         base_url = "http://api.openweathermap.org/data/2.5/weather?"
         city_name = result['cname']
         complete_url = base_url + "appid=" + api_key + "&q=" + city_name 
