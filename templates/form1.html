@@ -1,0 +1,18 @@
+<html>
+<body>
+	<form action = "http://localhost:5000/result" method = "POST">
+		<input type="text" id="cname" name="cname"><br><br>
+	</form>
+	<div id="result">
+	<table>
+		{% for t in result %}
+    	<tr>
+    		{% for i in t %}
+        	<td>{{ i }}</td>
+    		{% endfor %}
+    	</tr>
+		{% endfor %}
+	</table>
+	</div>
+</body>
+</html>
