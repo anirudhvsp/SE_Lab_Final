@@ -1,8 +1,10 @@
 <html>
 <body>
-	<form action = "http://localhost:5000/result" method = "POST">
+	<h1>Enter the city you want to view the weather for:</h1>
+	<form action = "http://localhost:5000/result" method = "POST" id='form1'>
 		<input type="text" id="cname" name="cname"><br><br>
 	</form>
+	<button type="submit" form="form1" value="Submit">Submit</button>
 	<div id="result">
 	<table>
 		{% for t in result %}
